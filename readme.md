@@ -16,9 +16,6 @@ Com a paixão pela aviação, cheguei até a paixão pelos dados! Esse repositó
 |Segunda-feira   |236316|23275908|6.0 |
 |Terça-feira     |219802|20366840|7.0 |
 
-### 1- Faça um ranking para o número total de PAX por dia da semana.
-
-The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
 
 ### 2 - Qual a correlação de sábado e domingo somados com o total de RPK?
 
@@ -59,7 +56,7 @@ A questão não apresenta informações concretas para que seja possível criar 
 ## 4 - Crie um forecast de PAX por ‘Local de Venda’ para os próximos 15 dias a contar da última data de venda. (Aqui a técnica é livre) 
 
 Para o desenvolvimento do forecast, utilizei o Prophet. Uma biblioteca que consegue  analisar séries temporais onde há sazonalidade não-linear anualmente, semanalmente e até diariamente. Possui um bom comportamento quando envolve dados históricos ou eventos sazonais. Uma dos objetivos da biblioteca é automatizar o maior números de passos para criar um modelo, isso é, ele realiza o tratamento automático de outliers, dados faltantes e mudanças drásticas na série temporal.
-
+![enter image description here](https://i.imgur.com/TwltXMX.png)
 Para o canal **Arena**:
 |Índice| |Data|realizado|previsto          |Local_Venda|diff|
 |------|---|----------|---------|------------------|-----------|----|
@@ -199,4 +196,223 @@ Para a resolução desta questão,  utilizei o conjunto de dados disponibilizado
 |TAM LINHAS AÉREAS S.A.                             |8144  |2029668313|249222.533521611  |
 
 
-# To be continued...
+**Análise dos TOP 15 trechos da Azul Linhas 	Aéreas, que detém a maior soma de RPK em Maio de 2021.**
+|nm_empresa                        |sg_iata_origem|nm_municipio_origem |sg_iata_destino|nm_municipio_destino|Quantidade de Voos|
+|----------------------------------|--------------|--------------------|---------------|--------------------|------------------|
+|AZUL LINHAS AÉREAS BRASILEIRAS S/A|CNF           |CONFINS             |VCP            |CAMPINAS            |224               |
+|AZUL LINHAS AÉREAS BRASILEIRAS S/A|VCP           |CAMPINAS            |CNF            |CONFINS             |219               |
+|AZUL LINHAS AÉREAS BRASILEIRAS S/A|POA           |PORTO ALEGRE        |VCP            |CAMPINAS            |216               |
+|AZUL LINHAS AÉREAS BRASILEIRAS S/A|VCP           |CAMPINAS            |POA            |PORTO ALEGRE        |215               |
+|AZUL LINHAS AÉREAS BRASILEIRAS S/A|VCP           |CAMPINAS            |SDU            |RIO DE JANEIRO      |209               |
+|AZUL LINHAS AÉREAS BRASILEIRAS S/A|SDU           |RIO DE JANEIRO      |VCP            |CAMPINAS            |206               |
+|AZUL LINHAS AÉREAS BRASILEIRAS S/A|SDU           |RIO DE JANEIRO      |CGH            |SÃO PAULO           |185               |
+|AZUL LINHAS AÉREAS BRASILEIRAS S/A|CGH           |SÃO PAULO           |SDU            |RIO DE JANEIRO      |183               |
+|AZUL LINHAS AÉREAS BRASILEIRAS S/A|VCP           |CAMPINAS            |CWB            |SÃO JOSÉ DOS PINHAIS|168               |
+|AZUL LINHAS AÉREAS BRASILEIRAS S/A|CWB           |SÃO JOSÉ DOS PINHAIS|VCP            |CAMPINAS            |168               |
+|AZUL LINHAS AÉREAS BRASILEIRAS S/A|SDU           |RIO DE JANEIRO      |CNF            |CONFINS             |157               |
+|AZUL LINHAS AÉREAS BRASILEIRAS S/A|CNF           |CONFINS             |SDU            |RIO DE JANEIRO      |155               |
+|AZUL LINHAS AÉREAS BRASILEIRAS S/A|VCP           |CAMPINAS            |BSB            |BRASÍLIA            |150               |
+|AZUL LINHAS AÉREAS BRASILEIRAS S/A|BSB           |BRASÍLIA            |VCP            |CAMPINAS            |148               |
+|AZUL LINHAS AÉREAS BRASILEIRAS S/A|MAO           |MANAUS              |VCP            |CAMPINAS            |146               |
+
+**Análise dos TOP 15 trechos da GOL Linhas Aéreas que detém a maior soma de RPK em Maio de 2021.**
+|nm_empresa                        |sg_iata_origem|nm_municipio_origem |sg_iata_destino|nm_municipio_destino|Quantidade de Voos|
+|----------------------------------|--------------|--------------------|---------------|--------------------|------------------|
+|GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)|SDU           |RIO DE JANEIRO      |CGH            |SÃO PAULO           |168               |
+|GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)|CGH           |SÃO PAULO           |SDU            |RIO DE JANEIRO      |166               |
+|GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)|GRU           |GUARULHOS           |BSB            |BRASÍLIA            |102               |
+|GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)|BSB           |BRASÍLIA            |GRU            |GUARULHOS           |100               |
+|GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)|CNF           |CONFINS             |GRU            |GUARULHOS           |98                |
+|GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)|REC           |RECIFE              |GRU            |GUARULHOS           |98                |
+|GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)|GRU           |GUARULHOS           |REC            |RECIFE              |97                |
+|GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)|POA           |PORTO ALEGRE        |GRU            |GUARULHOS           |97                |
+|GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)|GRU           |GUARULHOS           |CNF            |CONFINS             |97                |
+|GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)|FLN           |FLORIANÓPOLIS       |GRU            |GUARULHOS           |96                |
+|GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)|GRU           |GUARULHOS           |FLN            |FLORIANÓPOLIS       |96                |
+|GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)|GRU           |GUARULHOS           |POA            |PORTO ALEGRE        |96                |
+|GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)|GRU           |GUARULHOS           |FOR            |FORTALEZA           |95                |
+|GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)|FOR           |FORTALEZA           |GRU            |GUARULHOS           |95                |
+|GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)|CWB           |SÃO JOSÉ DOS PINHAIS|GRU            |GUARULHOS           |94                |
+
+Tanto a Azul Linhas Aéreas quanto a Gol linhas Aéreas, utilizam o paradigma spoke-hub de distribuição de voos. O paradigma consiste em centralizar os voos em Aeroportos onde há maior número de voos saindo para atender outras cidades, então, os aeroportos onde a movimentação não é tão expressiva deve ser ligados em um Aeroporto onde há o maior número de voos. O spoke-hub está mais presente na Azul, uma vez que seu HUB principal é VCP. Enquanto na Gol, o HUB é GRU e CGH. Diferente da Gol, a Azul teve um número mais expressivo em trechos comuns entre o HUB ao Aeroporto de Confins (CNF). Isso é devido a Azul ter um expressivo número de voos regionais interligado o interior de Minas Gerais a capital e também ser um HUB estratégico da empresa. </p>  <br> <p>Uma outra análise é do trecho mais comum do Brasil: a ponte aérea. A Azul Linhas Aéreas realizou mais de 185 voos entre Santos Dumont (RJ) para Congonhas (SP), enquanto a Gol realizou 168. 
+
+|nm_empresa|Quantidade de voos                       |
+|----------|----------------------------------|
+|AZUL LINHAS AÉREAS BRASILEIRAS S/A|185                               |
+|GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)|168                               |
+
+Analisando a fundo a taxa de ocupação, dada pelo RPK dividido pelo ASK, teremos a distribuição da ocupação no trecho SDU-CGH entre a Azul Linhas Aéreas e a GOL Linhas Aéreas.
+
+
+**Estatística descritiva da distribuição de ocupação (RPK dividido pelo ASK) entre SDU e CGH.**
+
+|Medida|AZUL Linhas Aéreas|GOL Linhas Aéreas|
+|------|------------------|-----------------|
+|Quantidade de voos|185.0             |166.0            |
+|Média|70.57 |83.19|
+|Desvio Padrão   |19.43|11.13|
+|Ocupação Mínima|33.05             |53.45            |
+|Percentil 25%   |52.54             |76.605           |
+|Percentil 50%   |72.03             |85.38499999999999|
+|Percentil 75%   |88.98             |92.385           |
+|Ocupação Máxima |100.0             |99.44            |
+Apesar de maior número de voos no trecho SDU-CGH, a Gol Linhas Aéreas apresentou maior média de ocupação, 83.19% de ocupação em seus voos (RPK/ASK), contra 70.57% da Azul Linhas Aéreas.
+
+**Estatística descritiva da distribuição de ocupação (RPK dividido pelo ASK) entre SDU e CGH durante a semana.**
+
+|Empresa|AZUL LINHAS AÉREAS BRASILEIRAS S/A|AZUL LINHAS AÉREAS BRASILEIRAS S/A|AZUL LINHAS AÉREAS BRASILEIRAS S/A|AZUL LINHAS AÉREAS BRASILEIRAS S/A|AZUL LINHAS AÉREAS BRASILEIRAS S/A|AZUL LINHAS AÉREAS BRASILEIRAS S/A|AZUL LINHAS AÉREAS BRASILEIRAS S/A|GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)|GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)|GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)|GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)|GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)|GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)|GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)|
+|----------|----------------------------------|----------------------------------|----------------------------------|----------------------------------|----------------------------------|----------------------------------|----------------------------------|---------------------------------------------------|---------------------------------------------------|---------------------------------------------------|---------------------------------------------------|---------------------------------------------------|---------------------------------------------------|---------------------------------------------------|
+|Dia da semana|Domingo                           |Quarta-feira                      |Quinta-feira                      |Segunda-feira                     |Sexta-feira                       |Sábado                            |Terça-feira                       |Domingo                                            |Quarta-feira                                       |Quinta-feira                                       |Segunda-feira                                      |Sexta-feira                                        |Sábado                                             |Terça-feira                                        |
+|Quantidade de voos|28.0                              |22.0                              |28.0                              |35.0                              |30.0                              |19.0                              |23.0                              |26.0                                               |19.0                                               |21.0                                               |33.0                                               |28.0                                               |21.0                                               |18.0                                               |
+|Média|89.5892857142857                  |63.51818181818183                 |55.503571428571426                |82.82571428571427                 |65.22666666666666                 |61.057894736842115                |68.68260869565219                 |89.2346153846154                                   |77.07894736842105                                  |83.64285714285715                                  |86.13333333333334                                  |80.11071428571427                                  |79.65714285714286                                  |83.95555555555558                                  |
+|Desvio padrão     |7.194150879590091                 |20.006894915399645                |13.450223243166091                |13.465387936071787                |17.478004567975173                |19.81568727014796                 |18.09828349906831                 |8.939482862344658                                  |12.089875421992495                                 |9.503345275668535                                  |11.998090125793633                                 |12.122594126662344                                 |10.35159753026418                                  |6.858761869250525                                  |
+|Ocupação Mínima|69.5                              |33.1                              |35.6                              |52.5                              |34.7                              |34.7                              |41.5                              |61.6                                               |55.2                                               |58.2                                               |53.4                                               |53.8                                               |60.1                                               |69.0                                               |
+|25%       |86.875                            |45.324999999999996                |44.9                              |70.3                              |47.5                              |44.1                              |54.2                              |86.75                                              |67.1                                               |79.7                                               |82.3                                               |73.52499999999999                                  |71.3                                               |80.275                                             |
+|50%       |91.5                              |63.150000000000006                |52.5                              |89.0                              |67.35                             |57.6                              |72.0                              |91.95                                              |80.5                                               |85.3                                               |90.6                                               |81.5                                               |83.7                                               |84.6                                               |
+|75%       |94.29999999999998                 |80.75                             |59.55                             |91.95                             |78.6                              |76.25                             |83.9                              |94.475                                             |85.75                                              |91.3                                               |95.3                                               |89.925                                             |87.6                                               |88.94999999999999                                  |
+|Ocupação Máxima|100.0                             |96.6                              |92.4                              |97.5                              |94.9                              |93.2                              |97.5                              |98.9                                               |96.6                                               |96.7                                               |99.4                                               |95.4                                               |93.0                                               |95.0                                               |
+
+Em uma análise a média de ocupação nos voos entre SDU e CGH é possível identificar que Domingo e Segunda são os dias mais críticos para a operação da ponte aérea para as duas empresas, sendo que a Gol tem obtido maior ocupação na Segunda-Feira, com 86.14, ao contrário da Azul, que teve 82.23%.
+
+**Destinos GOL que registraram ocupação menor que 50%.**
+|IATA Origem|Origem|IATA Destino|Destino|Ocupação (em porcentagem)|
+|--------------|-------------------|---------------|--------------------|--------|
+|FOR           |FORTALEZA          |BVB            |BOA VISTA           |0.0     |
+|BAQ           |BARRANQUILLA       |GYE            |GUAYAQUIL           |0.5376344086021506|
+|CKS           |PARAUAPEBAS        |SLZ            |SÃO LUÍS            |27.1505376344086|
+|SLZ           |SÃO LUÍS           |CKS            |PARAUAPEBAS         |28.225806451612904|
+|GIG           |RIO DE JANEIRO     |EZE            |EZEIZA, BUENOS AIRES PROVINCE|29.03225806451613|
+|GYE           |GUAYAQUIL          |GIG            |RIO DE JANEIRO      |29.03225806451613|
+|GIG           |RIO DE JANEIRO     |BAQ            |BARRANQUILLA        |29.56989247311828|
+|EZE           |EZEIZA, BUENOS AIRES PROVINCE|GIG            |RIO DE JANEIRO      |29.56989247311828|
+|GIG           |RIO DE JANEIRO     |SCL            |SANTIAGO            |30.64516129032258|
+|SCL           |SANTIAGO           |GIG            |RIO DE JANEIRO      |30.64516129032258|
+|ASU           |ASUNCIÓN           |CNF            |CONFINS             |31.72043010752688|
+|CNF           |CONFINS            |ASU            |ASUNCIÓN            |31.72043010752688|
+|RBR           |RIO BRANCO         |CZS            |CRUZEIRO DO SUL     |40.90392227931404|
+|VCP           |CAMPINAS           |SDU            |RIO DE JANEIRO      |43.95445134575569|
+|CNF           |CONFINS            |CKS            |PARAUAPEBAS         |44.17562724014337|
+|CZS           |CRUZEIRO DO SUL    |RBR            |RIO BRANCO          |44.32460024190774|
+|SDU           |RIO DE JANEIRO     |VCP            |CAMPINAS            |44.98511166253102|
+|CKS           |PARAUAPEBAS        |CNF            |CONFINS             |45.878136200716845|
+|CKS           |PARAUAPEBAS        |BSB            |BRASÍLIA            |48.757763975155285|
+
+Em uma visão macro em relação aos voos executados pela Gol Linhas Aéreas, destaca-se que as piores ocupações foram em novos destinos inaugurados como Paraupebas (27.15% entre CKS-SLZ; 28.22% entre SLZ-CKS) e destinos internacionais como Ezeiza, Santiago, Guayaquil e Barranquilla. Uma hipótese para a baixa ocupação pode ser as restrições e medidas sanitárias de cada destino.
+
+**Destinos GOL que registraram ocupação maior que 90%.**
+|IATA Origem|Origem|IATA Destino|Destino|Ocupação  (em porcentagem)|
+|--------------|-------------------|---------------|--------------------|--------|
+|SDU           |RIO DE JANEIRO     |CWB            |SÃO JOSÉ DOS PINHAIS|98.18404434386676|
+|MAO           |MANAUS             |RBR            |RIO BRANCO          |97.31182795698925|
+|NAT           |SÃO GONÇALO DO AMARANTE|CNF            |CONFINS             |97.31182795698925|
+|JDO           |JUAZEIRO DO NORTE  |GRU            |GUARULHOS           |96.67818740399386|
+|GRU           |GUARULHOS          |JDO            |JUAZEIRO DO NORTE   |96.61489446435687|
+|NVT           |NAVEGANTES         |CNF            |CONFINS             |96.23655913978494|
+|SDU           |RIO DE JANEIRO     |POA            |PORTO ALEGRE        |96.16782458765496|
+|IOS           |ILHÉUS             |GRU            |GUARULHOS           |96.01838442639334|
+|PVH           |PORTO VELHO        |BSB            |BRASÍLIA            |95.93413978494624|
+|BSB           |BRASÍLIA           |CGR            |CAMPO GRANDE        |95.85798816568047|
+|BSB           |BRASÍLIA           |REC            |RECIFE              |95.77684276141498|
+|SDU           |RIO DE JANEIRO     |SSA            |SALVADOR            |95.77006141700049|
+|CGB           |VÁRZEA GRANDE      |BSB            |BRASÍLIA            |95.72452636968767|
+|REC           |RECIFE             |GRU            |GUARULHOS           |95.36056704789712|
+|CGB           |VÁRZEA GRANDE      |GRU            |GUARULHOS           |95.21584931307729|
+|BPS           |PORTO SEGURO       |CNF            |CONFINS             |95.16129032258065|
+|FLN           |FLORIANÓPOLIS      |POA            |PORTO ALEGRE        |95.16129032258065|
+|GRU           |GUARULHOS          |CGB            |VÁRZEA GRANDE       |95.07989380885594|
+|GRU           |GUARULHOS          |POA            |PORTO ALEGRE        |94.87980020550884|
+|SDU           |RIO DE JANEIRO     |FLN            |FLORIANÓPOLIS       |94.6732470577365|
+|CNF           |CONFINS            |AJU            |ARACAJU             |94.6236559139785|
+|BSB           |BRASÍLIA           |POA            |PORTO ALEGRE        |94.55645161290322|
+|REC           |RECIFE             |BSB            |BRASÍLIA            |94.54638720066488|
+|GRU           |GUARULHOS          |REC            |RECIFE              |94.5159362453791|
+|BSB           |BRASÍLIA           |NAT            |SÃO GONÇALO DO AMARANTE|94.44444444444443|
+|GRU           |GUARULHOS          |NVT            |NAVEGANTES          |94.20335689207899|
+|REC           |RECIFE             |CGH            |SÃO PAULO           |94.14230007241093|
+|BVB           |BOA VISTA          |BSB            |BRASÍLIA            |93.9784946236559|
+|MCP           |MACAPÁ             |BSB            |BRASÍLIA            |93.9784946236559|
+|JPA           |SANTA RITA         |GRU            |GUARULHOS           |93.9065893320621|
+|SSA           |SALVADOR           |CGH            |SÃO PAULO           |93.88371796506439|
+|POA           |PORTO ALEGRE       |BSB            |BRASÍLIA            |93.78227325192883|
+
+# Entender a correlação entre horários de voos e soma dos indicadores de RPK e ASK
+
+Para fazer a correção entre a faixa de horários e os indicadores de RPK e ASK foi necessário encontrar qual o que possui um maior números de voos da GOL, em seguida, encontrar qual dia da semana há o maior números de voos.
+
+**TOP Trechos com maiores números de voos da GOL Linhas Aéreas.**
+
+|nm_empresa|sg_icao_origem|sg_icao_destino|nr_voo            |
+|----------|--------------|---------------|------------------|
+|GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)|SBRJ          |SBSP           |168               |
+|GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)|SBSP          |SBRJ           |166               |
+|GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)|SBGR          |SBBR           |102               |
+|GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)|SBBR          |SBGR           |100               |
+|GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)|SBCF          |SBGR           |98                |
+|GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)|SBRF          |SBGR           |98                |
+|GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)|SBGR          |SBRF           |97                |
+|GOL LINHAS AÉREAS S.A. (EX- VRG LINHAS AÉREAS S.A.)|SBGR          |SBCF           |97                |
+
+Como Santos Dumont possui horário determinado para operar, removi ele da análise e então, passei a analisar somente o trecho Guarulhos - Brasília.  Em seguida, foi necessário analisar a distribuição semanal dos voos da GOL no trecho GRU-BSB.
+
+|Dia da Semana|Quantidade de voos|
+|---------|------|
+|Domingo  |16    |
+|Quarta-feira|14    |
+|Quinta-feira|15    |
+|Segunda-feira|18    |
+|Sexta-feira|14    |
+|Sábado   |11    |
+|Terça-feira|14    |
+
+Segunda-Feira possui 18 voos neste trecho, enquanto Domingo possui 16, então, iremos analisara distribuição dos horários e quantidade de voos apenas na Segunda-Feira.
+|hr_partida_real|Quantidade de voos|
+|---------------|------|
+|6              |2     |
+|8              |5     |
+|13             |2     |
+|14             |3     |
+|17             |2     |
+|22             |4     |
+
+Em seguida, iremos mostrar a soma de RPKs e ASKs realizados nessa data.
+|hr_partida_real|Soma de RPK|Soma de ASK|
+|---------------|------|------|
+|06             |201780|277020|
+|08             |639540|795150|
+|13             |269325|318060|
+|14             |441180|477090|
+|17             |269325|318060|
+|22             |548910|595935|
+
+O teste de normalidade Shapiro-Will indicará qual o melhor método de correlação iremos usar, vamos analisar:
+
+**Teste de normalidade usando Shapiro-Wil para média de RPK:** 
+ShapiroResult(statistic=0.9105069637298584, pvalue=0.4397401213645935) 
+
+Teste de normalidade usando Shapiro-Wil para média de ASK: 
+**ShapiroResult(statistic=0.8827252984046936, pvalue=0.28180739283561707**
+
+Como  o valor P < 0.5, usaremos o método Spearman. Veja a tabela de correlação:
+|indicador|hr_partida_real|nr_rpk|nr_ask|
+|---------|---------------|------|------|
+|hr_partida_real|1.0            |0.20570320484322127|0.04570745173382161|
+|nr_rpk   |0.20570320484322127|1.0   |0.9819932287820209|
+|nr_ask   |0.04570745173382161|0.9819932287820209|1.0   |
+
+Portanto, a correção entre o horário de partida e a soma do número de RPK é relativamente fraca segundo Vieira (2011), 
+Valores expressos em p-valor e r-valor. Análise de correlação de Speraman. Para a classificação do R, ultilizou-se a referência de 1Vieira, (2011). Teste de normalidade Shapiro-wilk teste p>0,05.
+
+**Em sequência, iremos fazer a **correlação** para a Média de RPKs e ASKs.**
+
+|medida|hr_partida_real|nr_rpk|nr_ask|
+|------|---------------|------|------|
+|hr_partida_real|1.0            |0.7826908981308054|0.16903085094570333|
+|nr_rpk|0.7826908981308054|1.0   |0.3429971702850177|
+|nr_ask|0.16903085094570333|0.3429971702850177|1.0   |
+
+
+Portanto, podemos dizer que a há uma correlação forte entre o horário de voos e a média de RPKs durante os voos da Segunda-Feira, sendo que quanto mais tarde for, maior podemos ter de assentos ocupados.
+
+# Thanks for the opportunity! ✈🧡
+_Uma vez que você tenha experimentado voar, você andará pela terra com seus olhos voltados para céu, pois lá você esteve e para lá você desejará voltar._
+
